@@ -1,0 +1,12 @@
+F:\Software\ComputerStore\ComputerStore\Common\bin\Debug\Common.dll
+F:\Software\ComputerStore\ComputerStore\Common\bin\Debug\Common.pdb
+F:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.csprojAssemblyReference.cache
+F:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+F:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.dll
+F:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.pdb
+G:\Software\ComputerStore\ComputerStore\Common\bin\Debug\Common.dll
+G:\Software\ComputerStore\ComputerStore\Common\bin\Debug\Common.pdb
+G:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.csproj.AssemblyReference.cache
+G:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+G:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.dll
+G:\Software\ComputerStore\ComputerStore\Common\obj\Debug\Common.pdb

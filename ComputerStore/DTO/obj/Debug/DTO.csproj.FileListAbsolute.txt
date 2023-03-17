@@ -1,0 +1,12 @@
+F:\Software\ComputerStore\ComputerStore\DTO\bin\Debug\DTO.dll
+F:\Software\ComputerStore\ComputerStore\DTO\bin\Debug\DTO.pdb
+F:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.dll
+F:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.pdb
+F:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+G:\Software\ComputerStore\ComputerStore\DTO\bin\Debug\DTO.dll
+G:\Software\ComputerStore\ComputerStore\DTO\bin\Debug\DTO.pdb
+G:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+G:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+G:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.dll
+G:\Software\ComputerStore\ComputerStore\DTO\obj\Debug\DTO.pdb

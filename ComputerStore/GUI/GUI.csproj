@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3539FFC5-E89D-4632-9D01-26B3A53B304A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>E:\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>E:\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessoriesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccessoriesPage.Designer.cs">
+      <DependentUpon>AccessoriesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CategoryManagementPage.Designer.cs">
+      <DependentUpon>CategoryManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComponentsPage.Designer.cs">
+      <DependentUpon>ComponentsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComputerPage.Designer.cs">
+      <DependentUpon>ComputerPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdersManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrdersManagementPage.Designer.cs">
+      <DependentUpon>OrdersManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerManagementPage.Designer.cs">
+      <DependentUpon>CustomerManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaptopPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LaptopPage.Designer.cs">
+      <DependentUpon>LaptopPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductManagementPage.Designer.cs">
+      <DependentUpon>ProductManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoftwarePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SoftwarePage.Designer.cs">
+      <DependentUpon>SoftwarePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticalPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticalPage.Designer.cs">
+      <DependentUpon>StatisticalPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupplierManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SupplierManagementPage.Designer.cs">
+      <DependentUpon>SupplierManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserPage.Designer.cs">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersManagementPage.Designer.cs">
+      <DependentUpon>UsersManagementPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseManagementPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WarehouseManagementPage.Designer.cs">
+      <DependentUpon>WarehouseManagementPage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccessoriesPage.resx">
+      <DependentUpon>AccessoriesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryManagementPage.resx">
+      <DependentUpon>CategoryManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComponentsPage.resx">
+      <DependentUpon>ComponentsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComputerPage.resx">
+      <DependentUpon>ComputerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersManagementPage.resx">
+      <DependentUpon>OrdersManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerManagementPage.resx">
+      <DependentUpon>CustomerManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaptopPage.resx">
+      <DependentUpon>LaptopPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductManagementPage.resx">
+      <DependentUpon>ProductManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SoftwarePage.resx">
+      <DependentUpon>SoftwarePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticalPage.resx">
+      <DependentUpon>StatisticalPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupplierManagementPage.resx">
+      <DependentUpon>SupplierManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserPage.resx">
+      <DependentUpon>UserPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersManagementPage.resx">
+      <DependentUpon>UsersManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WarehouseManagementPage.resx">
+      <DependentUpon>WarehouseManagementPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{d6967b58-49a5-469b-a470-b7e142e0d7fb}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4e2d3f75-1646-47cc-a62f-c24d4179ddc5}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{dbf0be25-9118-4d9d-838d-fab49e590db6}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Resources\icons8_Purchase_Order_26px.png" />
+    <None Include="bin\Debug\Resources\icons8_Paper_Money_26px.png" />
+    <None Include="bin\Debug\Resources\icons8_Print_26px.png" />
+    <Content Include="Resources\1.jpg" />
+    <Content Include="Resources\2.jpg" />
+    <Content Include="Resources\3.jpg" />
+    <Content Include="Resources\4.jpg" />
+    <Content Include="Resources\5.jpg" />
+    <Content Include="Resources\adguard.png" />
+    <Content Include="Resources\bkavpro.png" />
+    <Content Include="Resources\card1.png" />
+    <Content Include="Resources\card2.png" />
+    <Content Include="Resources\card3.png" />
+    <Content Include="Resources\card4.png" />
+    <Content Include="Resources\card5.png" />
+    <Content Include="Resources\card6.png" />
+    <Content Include="Resources\cpu1.png" />
+    <Content Include="Resources\cpu2.png" />
+    <Content Include="Resources\cpu3.png" />
+    <Content Include="Resources\cpu4.png" />
+    <Content Include="Resources\cpu5.png" />
+    <Content Include="Resources\cpu6.png" />
+    <Content Include="Resources\gaming1.png" />
+    <Content Include="Resources\gaming2.png" />
+    <Content Include="Resources\gaming3.png" />
+    <Content Include="Resources\gaming4.png" />
+    <Content Include="Resources\gaming5.png" />
+    <Content Include="Resources\gaming6.png" />
+    <Content Include="Resources\graphic1.png" />
+    <Content Include="Resources\graphic2.png" />
+    <Content Include="Resources\hdd1.png" />
+    <Content Include="Resources\hdd2.png" />
+    <Content Include="Resources\hdd3.png" />
+    <Content Include="Resources\headphone1.png" />
+    <Content Include="Resources\headphone2.png" />
+    <Content Include="Resources\headphone3.png" />
+    <Content Include="Resources\headphone4.png" />
+    <Content Include="Resources\headphone5.png" />
+    <Content Include="Resources\headphone6.png" />
+    <None Include="Resources\icons8_Approval_26px.png" />
+    <Content Include="Resources\icons8_Edit_26px.png" />
+    <None Include="Resources\icons8_Foreclosure_26px.png" />
+    <None Include="Resources\icons8_Lock_26px.png" />
+    <Content Include="Resources\icons8_Plus_Math_26px.png" />
+    <Content Include="Resources\icons8_Save_26px.png" />
+    <Content Include="Resources\icons8_Search_26px.png" />
+    <Content Include="Resources\icons8_Trash_Can_26px.png" />
+    <Content Include="Resources\icons8_Workstation_1.ico" />
+    <Content Include="Resources\kaspersky.png" />
+    <Content Include="Resources\keyboard1.png" />
+    <Content Include="Resources\keyboard2.png" />
+    <Content Include="Resources\keyboard3.png" />
+    <Content Include="Resources\keyboard4.png" />
+    <Content Include="Resources\keyboard5.png" />
+    <Content Include="Resources\keyboard6.png" />
+    <Content Include="Resources\logoacer.png" />
+    <Content Include="Resources\logoasus.png" />
+    <Content Include="Resources\logodell.png" />
+    <Content Include="Resources\logohp.png" />
+    <Content Include="Resources\logomacbook.png" />
+    <Content Include="Resources\logomsi.png" />
+    <Content Include="Resources\macbook1.png" />
+    <Content Include="Resources\macbook2.png" />
+    <Content Include="Resources\macbook3.png" />
+    <Content Include="Resources\macbook4.png" />
+    <Content Include="Resources\macbook5.png" />
+    <Content Include="Resources\macbook6.png" />
+    <Content Include="Resources\mouse1.png" />
+    <Content Include="Resources\mouse2.png" />
+    <Content Include="Resources\mouse3.png" />
+    <Content Include="Resources\mouse4.png" />
+    <Content Include="Resources\mouse5.png" />
+    <Content Include="Resources\mouse6.png" />
+    <Content Include="Resources\office.png" />
+    <Content Include="Resources\office1.png" />
+    <Content Include="Resources\office2.png" />
+    <Content Include="Resources\office3.png" />
+    <Content Include="Resources\office4.png" />
+    <Content Include="Resources\office5.png" />
+    <Content Include="Resources\office6.png" />
+    <Content Include="Resources\pcgamming1.png" />
+    <Content Include="Resources\pcgamming2.png" />
+    <Content Include="Resources\pcgamming3.png" />
+    <Content Include="Resources\pcgamming4.png" />
+    <Content Include="Resources\pcgamming5.png" />
+    <Content Include="Resources\pcgamming6.png" />
+    <Content Include="Resources\pcgraphic1.png" />
+    <Content Include="Resources\pcgraphic2.png" />
+    <Content Include="Resources\pcgraphic3.png" />
+    <Content Include="Resources\pcgraphic4.png" />
+    <Content Include="Resources\pcgraphic5.png" />
+    <Content Include="Resources\pcgraphic6.png" />
+    <Content Include="Resources\ssd1.jpg" />
+    <Content Include="Resources\ssd2.jpg" />
+    <Content Include="Resources\ssd3.jpg" />
+    <Content Include="Resources\surface1.png" />
+    <Content Include="Resources\surface2.png" />
+    <Content Include="Resources\surface3.png" />
+    <Content Include="Resources\workstation1.png" />
+    <Content Include="Resources\workstation2.png" />
+    <Content Include="Resources\workstation3.png" />
+    <Content Include="Resources\workstation4.png" />
+    <Content Include="Resources\workstation5.png" />
+    <Content Include="Resources\workstation6.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
